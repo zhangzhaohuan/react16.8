@@ -7,6 +7,19 @@ import AdvancedGuides from './components/AdvancedGuides'
 import ApiReference from './components/ApiReference'
 
 
+// hook start
+import UseStateDemo from './components/UseStateDemo'
+import UseEffectDemo from './components/UseEffectDemo'
+import UseReducerDemo from './components/UseReducerDemo'
+import UseMemoDemo from './components/UseMemoDemo'
+
+
+import HookExample from './components/HookExample'
+// hook end
+
+
+
+
 import './App.css';
 
 class App extends Component {
@@ -25,11 +38,50 @@ class App extends Component {
               <li>
                 <Link to='/apiReference'>api参考</Link>
               </li>
+              {/* hook start */}
+              <li>
+                <div>
+                    hook
+                </div>
+                <ul>
+                  <li>
+                    <Link to='/useStateDemo'>UseStateDemo</Link>
+                  </li>
+                  <li>
+                    <Link to='/useEffectDemo'>useEffectDemo</Link>
+                  </li>
+                  <li>
+                    <Link to='/useReducerDemo'>UseReducerDemo</Link>
+                  </li>
+
+                  <li>
+                    <Link to='/useMemoDemo'>UseMemoDemo</Link>
+                  </li>
+
+                  <li>
+                    <Link to='/hookExample'>HookExample</Link>
+                  </li>
+                </ul>
+              </li>
+              {/* hook end */}
+
             </ul>
             <Switch>
+              {/* 核心概念 */}
               <Route path='/mainconcepts' component={Mainconcepts} />
+              {/* 高级指引 */}
               <Route path='/advancedGuides' component={AdvancedGuides} />
+              {/* api */}
               <Route path='/apiReference' component={ApiReference} />
+              {/* hook start */}
+              <Route path='/useStateDemo' component={UseStateDemo} />
+              <Route path='/useEffectDemo' component={UseEffectDemo} />
+              <Route path='/useReducerDemo' component={UseReducerDemo} />
+              <Route path='/useMemoDemo' component={UseMemoDemo} />
+              <Route path='/hookExample' component={HookExample} />
+              {/* hook end */}
+
+
               <Route path='/' component={Home} />
             </Switch>
           </div>
