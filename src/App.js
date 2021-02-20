@@ -12,8 +12,7 @@ import UseStateDemo from './components/UseStateDemo'
 import UseEffectDemo from './components/UseEffectDemo'
 import UseReducerDemo from './components/UseReducerDemo'
 import UseMemoDemo from './components/UseMemoDemo'
-
-
+import UseApiDemo from './components/UseApiDemo'
 import HookExample from './components/HookExample'
 // hook end
 
@@ -57,7 +56,9 @@ class App extends Component {
                   <li>
                     <Link to='/useMemoDemo'>UseMemoDemo</Link>
                   </li>
-
+                  <li>
+                    <Link to='/useApiDemo'>UseApi:请求数据</Link>
+                  </li>
                   <li>
                     <Link to='/hookExample'>HookExample</Link>
                   </li>
@@ -78,6 +79,8 @@ class App extends Component {
               <Route path='/useEffectDemo' component={UseEffectDemo} />
               <Route path='/useReducerDemo' component={UseReducerDemo} />
               <Route path='/useMemoDemo' component={UseMemoDemo} />
+              <Route path='/useApiDemo' component={UseApiDemo} />
+
               <Route path='/hookExample' component={HookExample} />
               {/* hook end */}
 

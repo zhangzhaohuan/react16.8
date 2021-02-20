@@ -19,11 +19,14 @@ export default function UseStateDemo(props) {
     useEffect(()=>{
         console.log('useEffect');
     });
+    useEffect(()=>{
+        console.log('useEffect2');
+    });
     return (
         <>
             <div>{count}</div>
-            <button onClick={() => { setCount(count + 1) }} >count+1</button>
-            <button onClick={() => { setCount(count) }} >count不变:都不重新return</button>
+            <div onClick={() => { setCount(count + 1) }} >count+1</div>
+            <div onClick={() => { setCount(count) }} >count不变:都不重新return</div>
             <Child count={count} />
         </>
     )

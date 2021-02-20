@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useCallback } from 'react';
+import React, { useMemo, useState, useCallback, useEffect } from 'react';
 
 
 // useMemo 和useCallback 区别：
@@ -21,6 +21,7 @@ export default function UseMemoDemo(props) {
     const initDepend3 = [];
     const [depend3, setDepend3] = useState(initDepend3);
 
+
     // const compute = function (param1, param2) {
     //     console.log('compute')
     //     return param1 + param2
@@ -37,6 +38,8 @@ export default function UseMemoDemo(props) {
         console.log('render2')
         return val1 + val2;
     }
+
+
     const result = useMemo(() =>
         compute(depend1, depend2)
         , [depend1, depend2]);
@@ -46,7 +49,9 @@ export default function UseMemoDemo(props) {
         compute2(depend1, depend2)
         , [depend1, depend2]);
 
-
+    useEffect(() => {
+        console.log('33333')
+    }, [depend3])
 
     return (
         <>
