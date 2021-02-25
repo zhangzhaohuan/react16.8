@@ -17,9 +17,13 @@ import HookExample from './components/HookExample'
 // hook end
 
 
+// component 
+import Bread from './components/Bread'
+import Loading from './components/Loading'
+import AxxInput from './components/Input';
 
 
-import './App.css';
+import './App.less';
 
 class App extends Component {
   render() {
@@ -62,6 +66,15 @@ class App extends Component {
                   <li>
                     <Link to='/hookExample'>HookExample</Link>
                   </li>
+                  <li>
+                    <Link to='/bread'>bread</Link>
+                  </li>
+                  <li>
+                    <Link to='/loading'>loading</Link>
+                  </li>
+                  <li>
+                    <Link to='/axxinput'>axxinput</Link>
+                  </li>
                 </ul>
               </li>
               {/* hook end */}
@@ -84,7 +97,9 @@ class App extends Component {
               <Route path='/hookExample' component={HookExample} />
               {/* hook end */}
 
-
+              <Route path='/bread' component={Bread} />
+              <Route path='/loading' component={Loading} />
+              <Route path='/axxinput' component={AxxInput} />
               <Route path='/' component={Home} />
             </Switch>
           </div>

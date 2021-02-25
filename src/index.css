@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+.ring{
+  transform-origin: 34.5px 34.5px;
+  animation: roll 1000ms linear infinite;
+}
+@keyframes roll {
+  0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
