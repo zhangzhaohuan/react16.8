@@ -12,6 +12,7 @@ export default class HandlingEvents extends Component {
     console.log(e);
     console.log(e.target);
     console.log('test')
+    console.log('test2')
   }
   /**
    * react函数传递参数方法2：bind传参
