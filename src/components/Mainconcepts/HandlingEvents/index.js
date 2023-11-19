@@ -11,6 +11,7 @@ export default class HandlingEvents extends Component {
     console.log(id);
     console.log(e);
     console.log(e.target);
+    console.log('test')
   }
   /**
    * react函数传递参数方法2：bind传参
