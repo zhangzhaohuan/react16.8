@@ -21,7 +21,8 @@ import HookExample from './components/HookExample'
 import Bread from './components/Bread'
 import Loading from './components/Loading'
 import AxxInput from './components/Input';
-
+import MouseEnter from './components/MouseEnter'
+import ShallowEqual from './components/ShallowEqual'
 
 import './App.less';
 
@@ -66,7 +67,17 @@ class App extends Component {
                   <li>
                     <Link to='/hookExample'>HookExample</Link>
                   </li>
-                  <li>
+                
+                </ul>
+              </li>
+              {/* hook end */}
+              <li>
+                <div>
+                    other
+                </div>
+              </li>
+              <ul>
+              <li>
                     <Link to='/bread'>bread</Link>
                   </li>
                   <li>
@@ -75,10 +86,13 @@ class App extends Component {
                   <li>
                     <Link to='/axxinput'>axxinput</Link>
                   </li>
-                </ul>
-              </li>
-              {/* hook end */}
-
+                  <li>
+                    <Link to='/mouseEnter'>mouseEnter</Link>
+                  </li>
+                  <li>
+                    <Link to='/shallowequal'>shallowequal</Link>
+                  </li>
+              </ul>
             </ul>
             <Switch>
               {/* 核心概念 */}
@@ -100,6 +114,10 @@ class App extends Component {
               <Route path='/bread' component={Bread} />
               <Route path='/loading' component={Loading} />
               <Route path='/axxinput' component={AxxInput} />
+              <Route path='/mouseEnter' component={MouseEnter} />
+              <Route path='/shallowequal' component={ShallowEqual} />
+
+
               <Route path='/' component={Home} />
             </Switch>
           </div>

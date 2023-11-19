@@ -4,7 +4,7 @@ import HandlingEvents from './HandlingEvents'
 
 
 const Mainconcepts = () => {
-  return <div></div>
+  return <div>Mainconcepts default</div>
 }
 export default class componentName extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class componentName extends Component {
       <div>
         <ul>
           <li>
-            <Link to='/mainconcepts/handlingEvents'>事件处理</Link>
+            <Link to='/mainconcepts/handlingEvents'>事件处理:传递参数</Link>
           </li>
         </ul>
         <Switch>

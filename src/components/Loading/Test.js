@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom';
 function Loading(props) {
   return <div id="axxAiLoading" className="axxAiLoadingHide">
       <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g class="ring">
-        <circle id="Ellipse 89"  cx="34.5" cy="34.5" r="32.5" stroke="#E4EBF1" stroke-width="4"/>
-        <path id="Ellipse 90" d="M67 34.5C67 38.768 66.1594 42.9941 64.5261 46.9372C62.8928 50.8803 60.4989 54.4631 57.481 57.481C54.4631 60.4989 50.8803 62.8928 46.9372 64.5261C42.9941 66.1594 38.768 67 34.5 67" stroke="#474D6B" stroke-width="4"/>
+        <g className="ring">
+        <circle id="Ellipse 89"  cx="34.5" cy="34.5" r="32.5" stroke="#E4EBF1" strokeWidth="4"/>
+        <path id="Ellipse 90" d="M67 34.5C67 38.768 66.1594 42.9941 64.5261 46.9372C62.8928 50.8803 60.4989 54.4631 57.481 57.481C54.4631 60.4989 50.8803 62.8928 46.9372 64.5261C42.9941 66.1594 38.768 67 34.5 67" stroke="#474D6B" strokeWidth="4"/>
         </g>
     <g id="Union">
     <path d="M23.754 47.2001L27.6247 19.2699C27.6586 18.9765 28.0535 18.8975 28.2115 19.1571L34.4634 29.6295C34.5085 29.7085 34.5198 29.7988 34.4972 29.8778L30.6829 44.3225C30.6603 44.4127 30.6039 44.4805 30.5136 44.5256L24.2054 47.5274C23.9797 47.6402 23.7201 47.4484 23.754 47.2001Z" fill="#474D6B"/>
