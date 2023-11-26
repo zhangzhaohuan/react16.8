@@ -3,7 +3,7 @@ import { Route, Switch, Link } from 'react-router-dom';
 import Hoc from './Hoc'
 
 const Advanceguide = () => {
-  return <div></div>
+  return <div>Advanceguide</div>
 }
 export default class componentName extends Component {
   render() {

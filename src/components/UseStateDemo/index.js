@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from 'react'
-import UseEffectDemo from '../UseEffectDemo';
 
 function Child(props) {
 
